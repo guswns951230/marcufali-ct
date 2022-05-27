@@ -148,3 +148,64 @@ article {
 .header__item:hover:before {
   width: 100%;
 }
+
+/* home */
+#home input[id*="slide"] {
+  display: none;
+}
+
+.home__slidewrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.home__slidelist {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.home__slidelist>li {
+  display: inline-block;
+  vertical-align: center;
+  width: 100%;
+  transition: all .5s;
+}
+
+.home__slidelist>li>a {
+  display: block;
+  position: relative;
+}
+
+.home__slidelist>li>a img {
+  width: 100%;
+}
+
+.home__slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 100% 10%;
+  cursor: pointer;
+}
+
+.home__slideBtn-left {
+  left: 0px;
+}
+
+.home__slideBtn-right {
+  right: 0px;
+}
+
+#home [id="slide01"]:checked~.home__slidewrapper .home__slidelist>li {
+  transform: translateX(0%);
+}
+
+#home [id="slide02"]:checked~.home__slidewrapper .home__slidelist>li {
+  transform: translateX(-100%);
+}
+
+#home [id="slide03"]:checked~.home__slidewrapper .home__slidelist>li {
+  transform: translateX(-200%);
+}
