@@ -1,0 +1,150 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #a5a8ad;
+  --color-blue: #73aace;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-black: #2c2c2c;
+  --color-ivory: #f8eec6;
+  --color-light-ivory: #f8f8e9;
+  --color-light-green: #65c19c;
+
+  /* Font size */
+  --font-x_large: 5.8rem;
+  --font-large: 4.8rem;
+  --font-medium: 2.8rem;
+  --font-regular: 1.8rem;
+  --font-small: 1.6rem;
+  --font-micro: 1.4rem;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* size */
+  --size-border-radius: 0.4rem;
+
+  /* Animation*/
+  --animation-duration: 300ms;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: default;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin: 1.6rem 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: var(--weight-semi-bold);
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 0;
+}
+
+p {
+  color: var(--color-black);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  margin: 0.5rem 0;
+}
+
+article {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+
+.section__title {
+  display: table;
+  padding: 4rem 0 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* header */
+#header {
+  position: fixed;
+  border-bottom: 0.1rem solid #ddd;
+  background-color: var(--color-white);
+  width: 100%;
+  /* height: 10rem; */
+  z-index: 1;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  padding: 0.8rem 1.2rem;
+  margin: 0 auto;
+}
+
+.header__menu {
+  display: flex;
+}
+
+.header__item {
+  padding: 0.8rem 0;
+  margin: 0 1.4rem;
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: var(--weight-semi-bold);
+  cursor: pointer;
+}
+
+.header__item:before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-black);
+  height: 0.2rem;
+  width: 0;
+  bottom: 0;
+  transition: 0.3s;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.header__item:hover:before {
+  width: 100%;
+}
