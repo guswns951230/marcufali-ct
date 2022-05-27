@@ -209,3 +209,26 @@ article {
 #home [id="slide03"]:checked~.home__slidewrapper .home__slidelist>li {
   transform: translateX(-200%);
 }
+
+/* price */
+#price {
+  background-color: black;
+}
+
+.price__title {
+  color: var(--color-white);
+}
+
+.price__description {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.description__cut {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.description__policy {
+  font-size: 1.6rem;
+}
