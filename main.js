@@ -1,5 +1,12 @@
 'use strict'
 
+// toggle button
+const toggleBtn = document.querySelector('.header__toggleBtn');
+const menu = document.querySelector('.header__menu');
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
 // modal
 const modal = document.querySelector('.store__modal');
 const imgs = document.querySelectorAll('.store__img')
