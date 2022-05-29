@@ -328,3 +328,130 @@ article {
 .location__center-info-value-sub {
   color: #999999;
 }
+
+/* store */
+#store {
+  background-color: black;
+}
+
+.store__title {
+  color: var(--color-white);
+}
+
+.store__explanation {
+  color: var(--color-white);
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.store__main-description {
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 2.4rem;
+}
+
+.store__main-facility-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2.4rem;
+}
+
+.main-facility-wrapper {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+  margin: 1.3rem;
+}
+
+.main-facility-wrapper img {
+  width: 100%;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-facility-wrapper img:hover {
+  opacity: 0.7;
+}
+
+.store__modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding: 5rem 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.store__modal-img {
+  display: block;
+  width: 50%;
+  height: auto;
+  max-width: 100rem;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.store__modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 3.5rem;
+  color: #f1f1f1;
+  font-size: 4rem;
+  font-weight: var(--weight-bold);
+  transition: 0.3s;
+}
+
+.store__modal-close:hover,
+.store__modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.store__sub-facility-container {
+  width: 60%;
+  border: .1rem solid var(--color-white);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.sub-facility-title {
+  color: var(--color-white);
+  text-align: center;
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+
+.store__sub-facility {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sub-wrap {
+  margin: 0 3rem;
+}
+
+.sub-icon {
+  color: var(--color-white);
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.sub-name {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
