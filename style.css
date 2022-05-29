@@ -455,3 +455,53 @@ article {
   text-align: center;
   font-weight: 600;
 }
+
+/* Designers */
+.designers__explanation {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.designers__designer {
+  display: flex;
+  padding: 3rem 0;
+}
+
+.designers__designer.min {
+  flex-direction: row-reverse;
+}
+
+.designers__image-wrapper {
+  display: block;
+  width: 50%;
+}
+
+.designers__image-wrapper.jung {
+  margin-right: 5rem;
+}
+
+.designers__image-wrapper.min {
+  margin-left: 5rem;
+}
+
+.designers__designer-img {
+  width: 100%;
+  border: 0.1rem solid #ddd;
+}
+
+.designers__description-wrapper {
+  border-top: 0.5rem solid black;
+  width: 50%;
+  padding: 5rem 2rem 5rem 2rem;
+  font-size: 1.6rem;
+}
+
+.designers__designer-title {
+  justify-content: flex-start;
+  font-size: 3rem;
+}
+
+.designers__designer-text {
+  margin-top: 10rem;
+}
