@@ -282,3 +282,49 @@ article {
   margin: 0 auto;
   font-size: 1.6rem;
 }
+
+/* location */
+#location {
+  background-color: #f0f0f0;
+}
+
+.location__map-and-center-info {
+  display: flex;
+}
+
+#map {
+  width: 53rem;
+  height: 39rem;
+  outline: 0;
+  z-index: 0;
+}
+
+.location__explanation {
+  font-size: 1.7rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+}
+
+.location__center-info-container {
+  width: 43.2rem;
+  padding-left: 3.2rem;
+  font-size: 1.6rem;
+}
+
+.location__center-info {
+  padding-top: 2.4rem;
+}
+
+.location__center-info-label {
+  padding-bottom: 0.8rem;
+  font-weight: var(--weight-bold);
+}
+
+.location__center-info-value-main {
+  padding-bottom: 2.4rem;
+  color: #555555;
+}
+
+.location__center-info-value-sub {
+  color: #999999;
+}
