@@ -1,5 +1,22 @@
 'use strict'
 
+// scroll
+function scrollIntoViews(selector) {
+  const menuHeight = document.querySelector("#header").offsetHeight;
+  const sectionHeight = document.querySelector(selector).offsetTop;
+  window.scrollTo({ top: sectionHeight - menuHeight, behavior: 'smooth' });
+}
+
+const headerMenu = document.querySelector('.header__menu');
+headerMenu.addEventListener('click', (e) => {
+  const target = e.target;
+  const link = target.dataset.link;
+  if (link === null) {
+    return;
+  }
+  scrollIntoViews(link);
+});
+
 // toggle button
 const toggleBtn = document.querySelector('.header__toggleBtn');
 const menu = document.querySelector('.header__menu');
