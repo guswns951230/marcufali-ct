@@ -6,11 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
   <title>Marcufali</title>
   <script src="https://kit.fontawesome.com/add8948dfa.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=pk5tscuoy0"></script>
 </head>
 
 <body>
@@ -153,6 +155,70 @@
         </div>
       </div>
     </article>
+  </section>
+
+  <!-- store -->
+  <section id="store">
+    <h2 class="section__title store__title"><strong>매장 안내</strong></h2>
+    <article class="store__section-article">
+      <div class="store__explanation">
+        ✓ 마르꾸파리 센텀점을 소개합니다.
+      </div>
+      <div class="store__main-description">
+        프리미엄 헤어 <strong>마르꾸파리 센텀점</strong>은 1인 예약제를 시행하여 고객 한 분만을 위한 1:1 헤어 메뉴얼을 진행합니다.
+        <br>
+        저희 매장에 방문한 고객분들께 편안한 분위기와 만족스러운 서비스를 제공하기 위해 최선을 다하겠습니다.
+        <br>
+        <br>
+        ❗️ 예약 취소,변경 시 꼭 연락 부탁드립니다.
+        <br>
+        ❗️ 항상 청결에 신경쓰며 위생을 중요시합니다. 안심하고 방문해주세요.
+      </div>
+
+      <div class="store__main-facility-container">
+        <div class="main-facility-wrapper">
+          <img src="/images/store-chair.jpg" alt="marcufali chair" class="store__img">
+        </div>
+        <div class="main-facility-wrapper">
+          <img src="/images/store-shampoo.jpg" alt="marcufali shampoo chair" class="store__img">
+        </div>
+        <div class="main-facility-wrapper">
+          <img src="/images/store-styler.jpg" alt="marcufali styler" class="store__img">
+        </div>
+        <div class="main-facility-wrapper">
+          <img src="/images/store-coffee.jpg" alt="marcufali capsule coffee" class="store__img">
+        </div>
+      </div>
+
+      <div class="store__sub-facility-container">
+        <h3 class="sub-facility-title">이용 가능 시설 안내</h3>
+        <ul class="store__sub-facility">
+          <li class="sub-wrap">
+            <div class="sub-icon"><i class="fa-solid fa-wifi"></i></div>
+            <div class="sub-name">wi-fi</div>
+          </li>
+
+          <li class="sub-wrap">
+            <div class="sub-icon"><i class="fa-solid fa-shirt"></i></div>
+            <div class="sub-name">스타일러</div>
+          </li>
+
+          <li class="sub-wrap">
+            <div class="sub-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <div class="sub-name">캡슐커피</div>
+          </li>
+
+          <li class="sub-wrap">
+            <div class="sub-icon"><i class="fa-solid fa-dog"></i></div>
+            <div class="sub-name">반려동물 <br>출입 가능</div>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <div class="store__modal">
+      <span class="store__modal-close"> &times;</span>
+      <img alt="marcufali chair" class="store__modal-img">
+    </div>
   </section>
 </body>
 
