@@ -505,3 +505,30 @@ article {
 .designers__designer-text {
   margin-top: 10rem;
 }
+
+#footer {
+  background-color: black;
+}
+
+.footer__section-article {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.footer__left {
+  font-size: 1.4rem;
+  color: #cccccc;
+}
+
+.footer__info-label {
+  display: inline;
+  padding-right: 1.6rem;
+  color: var(--color-dark-grey);
+}
+
+.footer__right {
+  padding-left: 4.8rem;
+  font-size: 1.4rem;
+  color: #cccccc;
+}
