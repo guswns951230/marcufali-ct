@@ -545,6 +545,11 @@ article {
   color: #cccccc;
 }
 
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-aspect-ratio:4/3) {
   #home {
     width: 100%;
