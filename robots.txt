@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-https://guswns951230.github.io/marcufali-ct/sitemap.xml
+Sitemap: https://guswns951230.github.io/marcufali-ct/sitemap.xml

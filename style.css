@@ -162,9 +162,9 @@ article {
 }
 
 /* home */
-#home input[id*="slide"] {
+/* #home input[id*="slide"] {
   display: none;
-}
+} */
 
 .home__slidewrapper {
   width: 100%;
